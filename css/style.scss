@@ -194,7 +194,8 @@ header{
     text-align: left;
     h1{
         font-family: $text-bold;
-        margin-left: 2vh;
+        text-align: center;
+        font-size: 19px;
 
     }
     .div1{
@@ -236,24 +237,26 @@ header{
 // =======about======
 .about{
     background-color: #E1EFF6;
-    height: 142vh;
+    height: 152vh;
+    text-align: center;
 
     h2{
         color: black;
         font-size: 30px;
         text-decoration: none;
-        padding-top: 12vh;
+        // padding-top: 12vh;
         margin-left: 2vh;
 
     }
     h3{
         text-align: center;
         font-family: $text-bold;
+        padding-bottom: 4vh;
     }
   .cards{
     
       display: block;
-      margin: 10vh;
+      margin: 6vh;
       img{
         position: relative;
         top: -5vh;
@@ -269,7 +272,7 @@ header{
       .card2{
           background-color: white;
           width: 103%;
-        margin-top: 5vh;
+        margin-top: 16vh;
         border-radius: 15px;
         box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
 
@@ -286,6 +289,7 @@ header{
     h2{
         padding: 2vh;
         font-family: $text-Regular;
+        text-align: center;
     }
     ul{
         // background-color: red;
@@ -800,6 +804,8 @@ footer{
         padding-top: 24vh;
         h1{
             font-size: 51px;
+            text-align: left;
+            margin-left: 2vh;
         }
        
     }
@@ -809,6 +815,7 @@ footer{
     h2{
         font-size: 51px;
         padding-bottom: 0;
+        text-align: left;
     }
     .cards{
         .card1{

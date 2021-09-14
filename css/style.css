@@ -228,7 +228,8 @@ header nav {
 
 .hero h1 {
   font-family: "Montserrat1";
-  margin-left: 2vh;
+  text-align: center;
+  font-size: 19px;
 }
 
 .hero .div1 {
@@ -268,25 +269,26 @@ header nav {
 
 .about {
   background-color: #E1EFF6;
-  height: 142vh;
+  height: 152vh;
+  text-align: center;
 }
 
 .about h2 {
   color: black;
   font-size: 30px;
   text-decoration: none;
-  padding-top: 12vh;
   margin-left: 2vh;
 }
 
 .about h3 {
   text-align: center;
   font-family: "Montserrat1";
+  padding-bottom: 4vh;
 }
 
 .about .cards {
   display: block;
-  margin: 10vh;
+  margin: 6vh;
 }
 
 .about .cards img {
@@ -306,7 +308,7 @@ header nav {
 .about .cards .card2 {
   background-color: white;
   width: 103%;
-  margin-top: 5vh;
+  margin-top: 16vh;
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
           box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
@@ -320,6 +322,7 @@ header nav {
 .services h2 {
   padding: 2vh;
   font-family: "Montserrat3";
+  text-align: center;
 }
 
 .services ul {
@@ -849,6 +852,8 @@ footer div p {
   }
   .hero .div1 h1 {
     font-size: 51px;
+    text-align: left;
+    margin-left: 2vh;
   }
   .about {
     height: 100vh;
@@ -856,6 +861,7 @@ footer div p {
   .about h2 {
     font-size: 51px;
     padding-bottom: 0;
+    text-align: left;
   }
   .about .cards .card1 {
     margin-left: 20vh;
