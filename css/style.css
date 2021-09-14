@@ -377,11 +377,23 @@ header nav {
   background-color: #E1EFF6;
   height: 110vh;
   margin-top: 7vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .join img {
   background-color: transparent;
   width: 100%;
+}
+
+.join .div2 {
+  margin-bottom: 12vh;
 }
 
 .join .div2 h3 {
@@ -420,6 +432,7 @@ header nav {
 
 .investor {
   margin-top: 5vh;
+  text-align: center;
 }
 
 .investor .div1 h2 {
@@ -718,6 +731,10 @@ footer div p {
     display: -ms-flexbox;
     display: flex;
     height: 50vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .join .div1 {
     width: 50%;

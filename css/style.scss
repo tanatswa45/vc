@@ -341,11 +341,15 @@ img{
     background-color: #E1EFF6;
     height: 110vh;
     margin-top: 7vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
     img{
         background-color: transparent;
         width: 100%;
     }
     .div2{
+        margin-bottom: 12vh;
         h3{
             padding: 6vh;
             font-family: $text-bold;
@@ -382,6 +386,8 @@ img{
 
 .investor{
     margin-top: 5vh;
+    text-align: center;
+   
     .div1{
         h2{
             padding: 3vh;
@@ -662,7 +668,8 @@ footer{
 }
     .join{
         display: flex;
-      height: 50vh;
+         height: 50vh;
+         flex-direction: row;
       .div1{
           width: 50%;
         
@@ -685,7 +692,6 @@ footer{
             }
         }
     }
-
 
 .investor{
         display: flex;
