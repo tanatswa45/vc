@@ -1,0 +1,961 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// ==============fonts======================
+$text-bold:'Montserrat1';
+$text-thin:'Montserrat2';
+$text-Regular:'Montserrat3';
+// =================end====================
+
+header{
+
+
+    background-color: transparent;
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    transition: .3s ease-in-out;
+    
+    img{
+        width: 40%;
+    }
+    .box-one{
+        display: none;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px 0px;
+            background-color: #E1EFF6;
+            li{
+                padding: .5rem 1rem;
+                .btn1{
+                    background-color: white;
+                    padding: 2vh;
+                    font-family: $text-bold;
+                }
+                a{
+                  
+                    color: rgb(0, 0, 0);
+                    font-size: 17px;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    font-size: $text-Regular;
+                 
+                }
+            }
+        }
+
+        .icons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 10px;
+            width: 100%;
+            padding: 10px 0px;
+            background-color:colorType(bg_color_two);
+            img{
+                margin: 0px 20px;
+                width: 8%;
+            }
+        }
+    }
+
+    #menubar{
+        width: 20%;
+        height: 45px;
+        position: relative;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        span {
+            display: block;
+            position: absolute;
+            height: 5px;
+            width: 80%;
+            background: #000000;
+            border-radius: 10px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+            &:nth-child(1) {
+                top: 3px;
+                transform-origin: left center;
+            }
+              
+            &:nth-child(2) {
+                top: 18px;
+                transform-origin: left center;
+            }
+              
+            &:nth-child(3) {
+                top: 33px;
+                transform-origin: left center;
+            }
+        }
+    
+        &.barOpen{
+            span{
+                background-color: #000000;
+                &:nth-child(1){
+                    transform: rotate(45deg);
+                    top: 4px;
+                    left: 8px;
+                    width: 70%;
+                }
+                &:nth-child(2){
+                    width: 0%;
+                    opacity: 0;
+                }
+                &:nth-child(3){
+                    transform: rotate(-45deg);
+                    top: 35px;
+                    left: 8px;
+                    width: 70%;
+                }
+            }
+        
+        }
+        
+    }
+
+    &.open{
+        height: 40vh;
+        .box-one{
+            display: block;
+        }
+        #menubar{
+            position: absolute;
+            right: 2%;
+            top: 12%;
+        }
+    }
+    nav{
+        display: none;
+    }
+
+   
+}
+// =======hero=====
+.hero{
+    background-color: #E1EFF6;
+    height: 100vh;
+    position: relative;
+    text-align: left;
+    h1{
+        font-family: $text-bold;
+        margin-left: 2vh;
+
+    }
+    .div1{
+        padding-top: 20vh;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px 0px;
+        
+            li{
+                // padding: .5rem 1rem;
+                .btn1{
+                    background-color: white;
+                    padding: 2vh;
+                    font-family: $text-bold;
+                    margin-left: 2vh;
+                }
+                a{
+                  
+                    color: rgb(0, 0, 0);
+                    font-size: 17px;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    font-size: $text-Regular;
+                 
+                }
+            }
+        }
+    }
+    .div2{
+        img{
+            width: 100%;
+        }
+    }
+}
+// =======end=======
+
+// =======about======
+.about{
+    background-color: #E1EFF6;
+    height: 142vh;
+
+    h2{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+        padding-top: 12vh;
+        margin-left: 2vh;
+
+    }
+    h3{
+        text-align: center;
+        font-family: $text-bold;
+    }
+  .cards{
+    
+      display: block;
+      margin: 10vh;
+      img{
+        position: relative;
+        top: -5vh;
+        width: 100%;
+      }
+      .card1{
+          background-color: white;
+          width: 104%;
+          border-radius: 15px;
+          box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
+          
+      }
+      .card2{
+          background-color: white;
+          width: 103%;
+        margin-top: 5vh;
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
+
+      }
+  }
+
+   
+}
+// =======end====
+
+.services{
+    overflow: hidden;
+    margin-top: 8vh;
+    h2{
+        padding: 2vh;
+        font-family: $text-Regular;
+    }
+    ul{
+        // background-color: red;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0px;
+        position: absolute;
+        top: 52vh;
+        margin-left: 25vh;
+         margin-top: -30vh;
+        li{
+            // padding: .5rem 1rem;
+            .btn1{
+                background-color: white;
+                padding: 2vh;
+                font-family: $text-bold;
+                margin-left: 2vh;
+                border-radius: 10px;
+                box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
+                box-sizing: border-box;
+            }
+            a{
+              
+                color: rgb(0, 0, 0);
+                font-size: 17px;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: $text-Regular;
+             
+            }
+        }
+    }
+    .text{
+        margin-top: 6vh;
+    }
+    .slick{
+img{
+    width: 100%;
+}
+    }
+  
+    .slick-slide {
+        margin: 0px 20px;
+      }
+}
+
+.join{
+    background-color: #E1EFF6;
+    height: 110vh;
+    margin-top: 7vh;
+    img{
+        background-color: transparent;
+        width: 100%;
+    }
+    .div2{
+        h3{
+            padding: 6vh;
+            font-family: $text-bold;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px 0px;
+            position: absolute;
+           
+            li{
+                .btn1{
+                    background-color: white;
+                    padding: 2vh;
+                    font-family: $text-bold;
+                    margin-left: 17vh;
+                    border-radius: 10px;
+                   
+                }
+                a{
+                  
+                    color: rgb(0, 0, 0);
+                    font-size: 17px;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    font-size: $text-Regular;
+                 
+                }
+            }
+        }
+    }
+}
+
+.investor{
+    margin-top: 5vh;
+    .div1{
+        h2{
+            padding: 3vh;
+            font-family: $text-bold;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px 0px;
+            position: absolute;
+            margin-left: 17vh;
+            li{
+    
+                .btn1{
+                    background-color: black;
+                    padding: 2vh;
+                    font-family: $text-bold;
+                    margin-left: 2vh;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
+                    box-sizing: border-box;
+                }
+                a{
+                  
+                    color: white;
+                    font-size: 17px;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    font-size: $text-Regular;
+                 
+                }
+            }
+        }
+    }
+    .div2{
+        margin-top: 19vh;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.QUESTIONS{
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 9vh;
+    hr{
+      padding: 2px;
+      color: black;
+      width: 100%;
+    }
+    .h2{
+        padding: 10vh;
+        font-size: 20px;
+        font-family: $text-bold;
+    }
+    h2{
+        padding: 0;
+        font-size: 19px;
+    }
+    background-color: #E1EFF6;
+    // common rule
+$color-white:#fff;
+@mixin flex( $justify, $align, $dir:row) {
+  display:flex;
+  flex-direction:$dir;
+  justify-content:$justify;
+  align-items:$align;
+}
+
+.accordion {
+  &__container {
+    margin-bottom:10px;
+    background-repeat:no-repeat;
+    padding:1em 2em;
+    width:100%;
+  }
+  &__container:last-type {
+    margin-bottom:0;
+  }
+  &__question__container {
+   @include flex(space-between, center);
+    margin-bottom:.8em;
+  }
+  &__question {
+    color:black;
+  }
+  &__btn {
+    display:inline-block;
+    background:none;
+    border:none;
+    border-radius:3px;
+    color:black;
+    cursor:pointer;
+    i {
+      font-size:1.2em;
+      padding:.15em;
+    }
+  }
+  &__answer__container {
+    display:none;
+  }
+}
+.active__accordion {
+  display:flex;
+}
+.startups{
+    background-color: #E1EFF6;
+.secondslick{
+    margin-top: 100px;
+}
+    .div1{
+        background-color: white;
+        width: 100%;
+    }
+  
+    #div1{
+        width: 40%;
+        margin-left: 14vh;
+
+    }  #div2{
+        width: 40%;
+        margin-left: 14vh;
+
+    }
+    #div3{
+        width: 50%;
+        margin-left: 14vh;
+
+    }
+   i{
+       border-radius: 79%;
+       padding: 15px;
+       border: 2px solid black;
+       font-size: 15px;
+       position: relative;
+       top: 0;
+       left: 0;
+   }
+       #img2{
+        position: relative;
+        top: 0;
+        left: 0;
+       }
+   
+}
+}
+
+
+footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    display: block;
+    padding: 0;
+    div{
+        display: block;
+        p{
+            font-size: 13px;
+        }
+    }
+}
+
+
+
+
+
+@media(min-width:768px){
+    header{
+        img{
+            width: 16%;
+        }
+        #menubar {
+            display: none;
+        }
+        nav{
+            display: block;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 20px 0px;
+                li{
+                    padding: .5rem 1rem;
+                    .btn1{
+                        background-color: white;
+                        padding: 2vh;
+                    }
+                    a{
+                      
+                        color: rgb(0, 0, 0);
+                        font-size: 24px;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                     
+                    }
+                }
+            }
+        }
+    }
+    
+    .hero{
+        display: flex;
+        height: 57vh;
+    
+    .div1{
+        padding-top: 20vh;
+        width: 63%;
+    }
+    .div2{
+        padding-top: 20vh;
+    }
+    }
+.about{
+    background-color: #E1EFF6;
+    height: 66vh;
+ 
+    h2{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+        padding-top: 12vh;
+        margin-left: 2vh;
+
+    }
+  .cards{
+      display: flex;
+      margin: 0;
+      margin-top: 5vh;
+      .card1{
+          background-color: white;
+          width: 34%;
+          margin-left: 4vh;
+          margin-top: 5vh;
+          border-radius: 15px;
+          box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
+
+           img{
+            position: relative;
+            top: -3vh;
+            width: 100%;
+          }
+
+    
+      }
+      .card2{
+          margin-left: 16vh;
+          background-color: white;
+          width: 33%;
+          border-radius: 15px;
+          box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
+          img{
+            position: relative;
+            top: -5vh;
+          }
+      }
+  }
+
+   
+}
+
+.services{
+    h1{
+        font-size: 35px;
+        padding: 1vh;
+    }
+    p{
+        font-size: 22px;
+    }
+}
+.services ul li .btn1 {
+    background-color: white;
+    padding: 2vh;
+    font-family: "Montserrat1";
+    margin-left: -7vh;
+  
+}
+    .join{
+        display: flex;
+      height: 50vh;
+      .div1{
+          width: 50%;
+        
+
+      }
+        .div2{
+            width: 50%;
+            margin-top: 15vh;
+            margin-left: 3vh;
+            h3{
+                padding: 0;
+            }
+            li{
+                .btn1{
+                    margin-left: -1vh;
+                }
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+    }
+
+
+.investor{
+        display: flex;
+       
+        .div1{
+            margin-left: 2vh;
+            margin-top: 12vh;
+            h2{
+                padding: 0;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+        .div1 ul li .btn1 {
+            margin-left: -17vh;
+        }
+        .div2{
+            margin-top: 1vh;
+        }
+      
+        
+    }
+    .QUESTIONS{
+        .h2{
+            font-size: 31px;
+        }
+        h2{
+            padding: 0;
+        }
+        p{
+            font-size: 26px;
+        }
+        main{
+            display: flex;
+            width: 100%;
+            margin-bottom: 10vh;
+            .div1{
+                width: 45%;
+            }
+            .div2{
+                width: 45%;
+            }
+        }
+    }
+    footer{
+        padding: 13vh;
+        .div1{
+            display: flex;
+            div{
+                width: 70%;
+                p{
+                    font-size: 19px;
+                }
+            }
+        }
+        .div2{
+            margin-top: 4vh;
+            display: flex;
+            margin-left: 15vh;
+            p{
+
+               font-size: 20px;
+            margin-left: 2vh;}
+        }
+    }
+}
+        
+
+
+
+
+
+
+
+
+
+
+@media(min-width :1265px){ 
+
+ header{
+        #menubar {
+            display: none;
+        }
+        nav{
+            display: block;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 20px 0px;
+                li{
+                    padding: .5rem 1rem;
+                    .btn1{
+                        background-color: white;
+                        padding: 2vh;
+                    }
+                    a{
+                      
+                        color: rgb(0, 0, 0);
+                        font-size: 27px;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                     
+                    }
+                }
+            }
+        }
+    }
+.hero{
+    display: flex;
+    justify-content: space-between;
+    height: 102vh;
+    .div1{
+        width: 31%;
+        padding-top: 24vh;
+        h1{
+            font-size: 51px;
+        }
+       
+    }
+}
+.about{
+    height: 100vh;
+    h2{
+        font-size: 51px;
+        padding-bottom: 0;
+    }
+    .cards{
+        .card1{
+            margin-left: 20vh;
+            img{
+               top: -6vh;
+            }
+        }
+    }
+}
+.services{
+    h2{
+        font-size: 51px;
+        padding: 6vh;
+    }
+    margin-top: 7vh;
+    ul{
+        top: 34vh;
+    }
+ .slick{
+     margin-left: 3vh;
+    .img{
+        margin-left: 3vh;
+    }
+ }
+}
+.services ul {
+    top: 53vh;
+}
+.investor{
+    margin-top: 54vh;
+    .div1{
+        width: 50%;
+     
+        p{
+            font-size: 30px;
+        }
+    }
+    .div2{
+        width: 50%;
+    }
+}.investor .div2 img {
+    width: 100%;
+    margin-top: 18vh;
+}
+
+.join{
+    height: 95vh;
+  
+    .div2{
+        margin-top: 22vh;
+        margin-left: 10vh;
+        h3{
+            font-size: 41px;
+        }
+        p{
+            font-size: 32px;
+        }
+        .div2 ul li .btn1 {
+            margin-left: 0;
+        }
+    }
+}
+.join .div2 ul li .btn1 {
+    background-color: white;
+    padding: 2vh;
+    font-family: "Montserrat1";
+    border-radius: 10px;
+}
+.investor{
+    margin-top: -11vh;
+    margin-bottom: 11vh;
+    .div1{
+        margin-top: 51vh;
+        margin-left: 4vh;
+         ul li .btn1 {
+            background-color: black;
+            padding: 2vh;
+            font-family: "Montserrat1";
+            margin-left: -16vh;
+            border-radius: 1px;
+            box-sizing: border-box;
+            h2{
+                font-size: 41px;
+            }
+            p{
+                font-size: 32px;
+            }
+        }
+    }
+}
+.QUESTIONS{
+   .startups{
+       .div1{
+           h3{
+            padding: 6vh;
+            font-size: 41px; 
+           }
+       }
+   } 
+
+     .startups i {
+    border-radius: 79%;
+    padding: 15px;
+    border: 2px solid black;
+    font-size: 15px;
+    position: relative;
+    top: -14vh;
+    left: -74vh;
+}
+
+.startups #img2 {
+    position: relative;
+    top: -14vh;
+    left: 69vh;
+}
+.startups #div3 {
+    width: 27%;
+    margin-left: 14vh;
+}
+}
+
+.QUESTIONS{
+    .h2{
+        font-size: 41px;
+    }
+    main{
+        display: flex;
+        width: 100%;
+        .div1{
+            width: 45%;
+        }
+        .div2{
+            width: 45%;
+        }
+    }
+}
+
+footer{
+.div2{
+    margin-left: 55vh;
+    p{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 1vh;
+    }
+}
+}
+
+}
