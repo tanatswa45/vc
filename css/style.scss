@@ -230,6 +230,27 @@ header{
         img{
             width: 100%;
         }
+        .james{
+            background-color: white;
+            width: 89%;
+            position: relative;
+            top: -8vh;
+            border-radius: 15px;
+            margin-left: 2vh;
+            margin-bottom: 4vh;
+        h3{
+            font-size: 24px;
+            font-family: $text-bold;
+            padding-left: 2vh;
+        }
+        p{
+            padding: 2vh; 
+            span{
+                font-family: $text-bold;
+            }
+        }
+      
+        }
     }
 }
 // =======end=======
@@ -237,14 +258,14 @@ header{
 // =======about======
 .about{
     background-color: #E1EFF6;
-    height: 152vh;
+    height: 160vh;
     text-align: center;
 
     h2{
         color: black;
         font-size: 30px;
         text-decoration: none;
-        // padding-top: 12vh;
+        padding-top: 10vh;
         margin-left: 2vh;
 
     }
@@ -347,12 +368,16 @@ img{
     img{
         background-color: transparent;
         width: 100%;
+        padding: 3vh;
     }
     .div2{
         margin-bottom: 12vh;
         h3{
             padding: 6vh;
             font-family: $text-bold;
+        }
+        p{
+            padding: 2vh;
         }
         ul{
             display: flex;
@@ -389,6 +414,9 @@ img{
     text-align: center;
    
     .div1{
+        p{
+            padding: 2vh;
+        }
         h2{
             padding: 3vh;
             font-family: $text-bold;
@@ -425,8 +453,11 @@ img{
     }
     .div2{
         margin-top: 19vh;
+        padding: 3vh;
+    
         img{
             width: 100%;
+
         }
     }
 }
@@ -445,6 +476,14 @@ img{
         font-size: 20px;
         font-family: $text-bold;
     }
+    .read{
+        background-color: black;
+        color: white;
+        padding: 2vh;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);  
+    }
+
     h2{
         padding: 0;
         font-size: 19px;
@@ -495,8 +534,31 @@ $color-white:#fff;
 .active__accordion {
   display:flex;
 }
+
+.div2{
+    display: none;
+}
+.div2-open{
+    display: block;
+}
+
 .startups{
     background-color: #E1EFF6;
+    margin-top: 12vh;
+    overflow: hidden;
+    
+   .div1{
+       button{
+           display: none  !important;
+           #img1{
+               display: none;
+           }
+           #img2{
+               display: none;
+           }
+       }
+   }
+    
 .secondslick{
     margin-top: 100px;
 }
@@ -504,35 +566,30 @@ $color-white:#fff;
         background-color: white;
         width: 100%;
     }
+
+    .slick{
+        display: flex;
+        justify-content: space-around;
+        #div1{
+            width:31%;
+            
+    
+        }  #div2{
+            width: 61%;
+            
+    
+        }
+        #div3{
+            width: 31%;
+        
+    
+        }
+    }
+    .slick-slide img {
+        display: initial;
+    }
   
-    #div1{
-        width: 40%;
-        margin-left: 14vh;
 
-    }  #div2{
-        width: 40%;
-        margin-left: 14vh;
-
-    }
-    #div3{
-        width: 50%;
-        margin-left: 14vh;
-
-    }
-   i{
-       border-radius: 79%;
-       padding: 15px;
-       border: 2px solid black;
-       font-size: 15px;
-       position: relative;
-       top: 0;
-       left: 0;
-   }
-       #img2{
-        position: relative;
-        top: 0;
-        left: 0;
-       }
    
 }
 }
@@ -595,11 +652,33 @@ footer{
         height: 57vh;
     
     .div1{
-        padding-top: 20vh;
+        padding-top: 26vh;
         width: 63%;
+        margin-left: 2vh;
+        h1{
+            font-size: 26px;
+            text-align: left;
+        }
     }
     .div2{
         padding-top: 20vh;
+        .james{
+            background-color: white;
+            width: 66%;
+            position: relative;
+            top: -7vh;
+            border-radius: 15px;
+            margin-left: 12vh;
+            margin-bottom: 7vh;
+            h3{
+                font-size: 32px;
+                padding-left: 2vh;
+            }
+            p{
+                font-size: 24px;
+                padding: 1vh;
+            }
+        }
     }
     }
 .about{
@@ -608,10 +687,11 @@ footer{
  
     h2{
         color: black;
-        font-size: 30px;
+        font-size: 44px;
         text-decoration: none;
         padding-top: 12vh;
         margin-left: 2vh;
+        text-align: left;
 
     }
   .cards{
@@ -638,6 +718,7 @@ footer{
           margin-left: 16vh;
           background-color: white;
           width: 33%;
+          margin-top: 5vh;
           border-radius: 15px;
           box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
           img{
@@ -734,6 +815,10 @@ footer{
             }
             .div2{
                 width: 45%;
+                display: block;
+            }
+            button{
+                display: none;
             }
         }
     }
@@ -814,6 +899,24 @@ footer{
             margin-left: 2vh;
         }
        
+    }
+    .div2{
+        .james{
+            background-color: white;
+              width: 42%;
+              position: relative;
+              top: -21vh;
+               border-radius: 15px;
+               margin-left: 60vh;
+               margin-bottom: 4vh;
+            h3{
+                padding-top: 3vh;
+                font-size: 38px;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
     }
 }
 .about{
@@ -914,6 +1017,13 @@ footer{
     }
 }
 .QUESTIONS{
+    .div2{
+        width: 45%;
+        display: block;
+    }
+    button{
+        display: none;
+    }
    .startups{
        .div1{
            h3{
