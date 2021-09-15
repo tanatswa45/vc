@@ -43,7 +43,7 @@ $(".secondslick").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay:true,
-  arrow:true,
+  // arrow:true,
 
  prevArrow:'#img1',
   nextArrow: '#img2',
