@@ -390,6 +390,10 @@ header nav {
   margin-top: 6vh;
 }
 
+.services .text span {
+  font-family: "Montserrat1";
+}
+
 .services .slick img {
   width: 100%;
 }
@@ -976,12 +980,13 @@ footer div p {
     font-size: 24px;
   }
   .about {
-    height: 100vh;
+    height: 120vh;
   }
   .about h2 {
     font-size: 51px;
     padding-bottom: 0;
     text-align: left;
+    padding-top: 20vh;
   }
   .about .cards .card1 {
     margin-left: 20vh;
@@ -1004,6 +1009,14 @@ footer div p {
   }
   .services .slick .img {
     margin-left: 3vh;
+  }
+  .services ul li .btn1 {
+    background-color: white;
+    padding: 2vh;
+    font-family: "Montserrat1";
+    margin-left: 7vh;
+    position: relative;
+    top: 4vh;
   }
   .services ul {
     top: 53vh;

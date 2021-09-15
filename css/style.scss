@@ -346,6 +346,9 @@ header{
     }
     .text{
         margin-top: 6vh;
+        span{
+            font-family: $text-bold;
+        }
     }
     .slick{
 img{
@@ -920,11 +923,12 @@ footer{
     }
 }
 .about{
-    height: 100vh;
+    height: 120vh;
     h2{
         font-size: 51px;
         padding-bottom: 0;
         text-align: left;
+        padding-top: 20vh;
     }
     .cards{
         .card1{
@@ -950,6 +954,14 @@ footer{
         margin-left: 3vh;
     }
  }
+}
+.services ul li .btn1 {
+    background-color: white;
+    padding: 2vh;
+    font-family: "Montserrat1";
+    margin-left: 7vh;
+    position: relative;
+    top: 4vh;
 }
 .services ul {
     top: 53vh;
