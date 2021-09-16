@@ -196,6 +196,8 @@ header{
         font-family: $text-bold;
         text-align: center;
         font-size: 19px;
+        width: 88%;
+        margin-left: 2vh;
 
     }
     .div1{
@@ -211,6 +213,12 @@ header{
                 .btn1{
                     background-color: white;
                     padding: 2vh;
+                    font-family: $text-bold;
+                    margin-left: 2vh;
+                }
+                .btn2{
+                    background-color: white;
+                    padding: 2vh 5vh;
                     font-family: $text-bold;
                     margin-left: 2vh;
                 }
@@ -238,6 +246,7 @@ header{
             border-radius: 15px;
             margin-left: 2vh;
             margin-bottom: 4vh;
+            box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
         h3{
             font-size: 24px;
             font-family: $text-bold;
@@ -267,6 +276,7 @@ header{
         text-decoration: none;
         padding-top: 10vh;
         margin-left: 2vh;
+        font-family: $text-Regular;
 
     }
     h3{
@@ -608,6 +618,7 @@ footer{
         display: block;
         p{
             font-size: 13px;
+            margin-bottom: 0;
         }
     }
 }
@@ -636,7 +647,11 @@ footer{
                     .btn1{
                         background-color: white;
                         padding: 2vh;
+                    } .btn2{
+                        background-color: white;
+                        padding: 2vh;
                     }
+
                     a{
                       
                         color: rgb(0, 0, 0);
@@ -861,6 +876,7 @@ footer{
 @media(min-width :1265px){ 
 
  header{
+    padding: 0px 46px;
         #menubar {
             display: none;
         }
@@ -871,16 +887,18 @@ footer{
                 flex-wrap: wrap;
                 justify-content: center;
                 padding: 20px 0px;
+                font-family: $text-Regular;
                 li{
                     padding: .5rem 1rem;
                     .btn1{
                         background-color: white;
                         padding: 2vh;
+                        font-family:$text-bold ;
                     }
                     a{
                       
                         color: rgb(0, 0, 0);
-                        font-size: 27px;
+                        font-size: 25px;
                         text-decoration: none;
                         text-transform: capitalize;
                      
@@ -894,64 +912,129 @@ footer{
     justify-content: space-between;
     height: 102vh;
     .div1{
-        width: 31%;
-        padding-top: 24vh;
+       width: 63%;
+       padding-top: 28vh;
         h1{
-            font-size: 51px;
+            font-size: 59px;
             text-align: left;
-            margin-left: 2vh;
+            margin-left: 4vh;
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 65px 0px;
+            margin-left: -41vh;
+        
+            li{
+               
+                .btn1{
+                    margin-left: 21vh 
+                
+                }
+                 .btn2{
+                    margin-left: 10vh 
+                }
+
+                a{
+                  
+                    color: rgb(0, 0, 0);
+                    font-size: 26px;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    font-size: $text-Regular;
+
+                    .fa{
+                        font-size: 21px;
+                        padding-left: 2vh;
+                        font-weight: bold;
+                    }
+                 
+                }
+            }
         }
        
     }
-    .div2{
+    .div2{  
+          padding-top: 16vh;
+          width: 80%;
+        
         .james{
             background-color: white;
-              width: 42%;
-              position: relative;
-              top: -21vh;
-               border-radius: 15px;
-               margin-left: 60vh;
-               margin-bottom: 4vh;
+            width: 37%;
+            position: relative;
+            top: -20vh;
+            border-radius: 15px;
+            margin-left: 58vh;
+            // margin-bottom: -13vh;
             h3{
                 padding-top: 3vh;
-                font-size: 38px;
+                font-size: 32px;
             }
             p{
-                font-size: 24px;
+                font-size: 23px;
+                padding-bottom: 4vh;
             }
         }
     }
 }
 .about{
-    height: 120vh;
+    height: 95vh;
+    h3{
+        font-size: 28px;
+    }
     h2{
         font-size: 51px;
         padding-bottom: 0;
         text-align: left;
-        padding-top: 20vh;
+        padding-top: 2vh;
+        margin-left: 5vh;
     }
     .cards{
+        margin-top: 11vh;
         .card1{
-            margin-left: 20vh;
+            margin-left: 31vh;
+            width: 28%;
             img{
                top: -6vh;
+               width: 100%;
+            }
+        }
+        .card2{
+            width: 27%;
+            img{
+            width: 100%;
             }
         }
     }
 }
 .services{
+    .firstslick{
+        margin-left: 9vh;
+        width: 205vh;
+    }
     h2{
         font-size: 51px;
         padding: 6vh;
+        margin-left: -35vh;
     }
     margin-top: 7vh;
     ul{
         top: 34vh;
+        li{
+        
+                .fa{padding-left: 5vh;
+                    font-size: 24px;
+
+                }
+            
+        }
     }
  .slick{
-     margin-left: 3vh;
+     margin-left: 2vh;
     .img{
-        margin-left: 3vh;
+        margin-left: 2vh;
     }
  }
 }
@@ -959,13 +1042,18 @@ footer{
     background-color: white;
     padding: 2vh;
     font-family: "Montserrat1";
-    margin-left: 7vh;
     position: relative;
-    top: 4vh;
+    margin-left: 8vh;
+    font-size: 24px;
+    position: relative;
+   top: 34vh;
+   .fa{
+       font-weight: bold;
+       font-size: 27px;
+   }
+
 }
-.services ul {
-    top: 53vh;
-}
+
 .investor{
     margin-top: 54vh;
     .div1{
@@ -984,49 +1072,79 @@ footer{
 }
 
 .join{
-    height: 95vh;
+    height: 91vh;
+    margin-top: 16vh;
+    img{
+        position: relative;
+        margin-top: -7vh;
+        padding: 0;
+        margin-left: 6vh;
+
+    }
   
     .div2{
-        margin-top: 22vh;
+        margin-top: 33vh;
         margin-left: 10vh;
+        text-align: left;
         h3{
             font-size: 41px;
         }
         p{
             font-size: 32px;
+            padding: 0;
         }
-        .div2 ul li .btn1 {
-            margin-left: 0;
+        .fa{
+            padding-left: 18px;
+              font-size: 29px;
         }
+     
     }
 }
 .join .div2 ul li .btn1 {
     background-color: white;
     padding: 2vh;
+    font-size: 25px;
     font-family: "Montserrat1";
-    border-radius: 10px;
+    border-radius: 0px;
+    margin-left: 0;
 }
 .investor{
     margin-top: -11vh;
     margin-bottom: 11vh;
+    text-align: left;
     .div1{
-        margin-top: 51vh;
-        margin-left: 4vh;
+        margin-top: 57vh;
+        margin-left: 11vh;
+        width: 50%;
+        h2{
+        font-size: 41px;
+        }
+        p{
+            font-size: 32px;
+            width: 90%;
+            padding: 0;
+        }
+    
          ul li .btn1 {
             background-color: black;
             padding: 2vh;
             font-family: "Montserrat1";
             margin-left: -16vh;
             border-radius: 1px;
-            box-sizing: border-box;
-            h2{
-                font-size: 41px;
-            }
-            p{
-                font-size: 32px;
+            font-size: 25px;
+            .fa{
+                padding-left: 18px;
+                  font-size: 29px;
             }
         }
     }
+
+    .div2{
+        width: 54%;
+        padding: 0;
+        margin-right: 8vh;
+    }
+  
 }
 .QUESTIONS{
     .div2{
@@ -1061,20 +1179,28 @@ footer{
     left: 69vh;
 }
 .startups #div3 {
-    width: 27%;
-    margin-left: 14vh;
+    width: 25%;
+    // margin-left: 14vh;
+    margin-bottom: 6vh;
 }
 }
 
 .QUESTIONS{
     .h2{
         font-size: 41px;
+        padding: 0;
+        padding-top: 19vh;
     }
     main{
         display: flex;
         width: 100%;
+        margin: 9vh;
+        h2{
+            font-size: 26px;
+        }
         .div1{
             width: 45%;
+            
         }
         .div2{
             width: 45%;
@@ -1089,6 +1215,7 @@ footer{
         font-size: 20px;
         margin-left: 20px;
         margin-top: 1vh;
+        margin-bottom: 0;
     }
 }
 }

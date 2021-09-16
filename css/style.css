@@ -230,6 +230,8 @@ header nav {
   font-family: "Montserrat1";
   text-align: center;
   font-size: 19px;
+  width: 88%;
+  margin-left: 2vh;
 }
 
 .hero .div1 {
@@ -255,6 +257,13 @@ header nav {
   margin-left: 2vh;
 }
 
+.hero .div1 ul li .btn2 {
+  background-color: white;
+  padding: 2vh 5vh;
+  font-family: "Montserrat1";
+  margin-left: 2vh;
+}
+
 .hero .div1 ul li a {
   color: black;
   font-size: 17px;
@@ -275,6 +284,8 @@ header nav {
   border-radius: 15px;
   margin-left: 2vh;
   margin-bottom: 4vh;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
+          box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.419);
 }
 
 .hero .div2 .james h3 {
@@ -303,6 +314,7 @@ header nav {
   text-decoration: none;
   padding-top: 10vh;
   margin-left: 2vh;
+  font-family: "Montserrat3";
 }
 
 .about h3 {
@@ -683,6 +695,7 @@ footer div {
 
 footer div p {
   font-size: 13px;
+  margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -710,6 +723,10 @@ footer div p {
     padding: .5rem 1rem;
   }
   header nav ul li .btn1 {
+    background-color: white;
+    padding: 2vh;
+  }
+  header nav ul li .btn2 {
     background-color: white;
     padding: 2vh;
   }
@@ -915,6 +932,9 @@ footer div p {
 }
 
 @media (min-width: 1265px) {
+  header {
+    padding: 0px 46px;
+  }
   header #menubar {
     display: none;
   }
@@ -931,6 +951,7 @@ footer div p {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 20px 0px;
+    font-family: "Montserrat3";
   }
   header nav ul li {
     padding: .5rem 1rem;
@@ -938,10 +959,11 @@ footer div p {
   header nav ul li .btn1 {
     background-color: white;
     padding: 2vh;
+    font-family: "Montserrat1";
   }
   header nav ul li a {
     color: black;
-    font-size: 27px;
+    font-size: 25px;
     text-decoration: none;
     text-transform: capitalize;
   }
@@ -955,71 +977,133 @@ footer div p {
     height: 102vh;
   }
   .hero .div1 {
-    width: 31%;
-    padding-top: 24vh;
+    width: 63%;
+    padding-top: 28vh;
   }
   .hero .div1 h1 {
-    font-size: 51px;
+    font-size: 59px;
     text-align: left;
-    margin-left: 2vh;
+    margin-left: 4vh;
+    width: 100%;
+  }
+  .hero .div1 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 65px 0px;
+    margin-left: -41vh;
+  }
+  .hero .div1 ul li .btn1 {
+    margin-left: 21vh;
+  }
+  .hero .div1 ul li .btn2 {
+    margin-left: 10vh;
+  }
+  .hero .div1 ul li a {
+    color: black;
+    font-size: 26px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: "Montserrat3";
+  }
+  .hero .div1 ul li a .fa {
+    font-size: 21px;
+    padding-left: 2vh;
+    font-weight: bold;
+  }
+  .hero .div2 {
+    padding-top: 16vh;
+    width: 80%;
   }
   .hero .div2 .james {
     background-color: white;
-    width: 42%;
+    width: 37%;
     position: relative;
-    top: -21vh;
+    top: -20vh;
     border-radius: 15px;
-    margin-left: 60vh;
-    margin-bottom: 4vh;
+    margin-left: 58vh;
   }
   .hero .div2 .james h3 {
     padding-top: 3vh;
-    font-size: 38px;
+    font-size: 32px;
   }
   .hero .div2 .james p {
-    font-size: 24px;
+    font-size: 23px;
+    padding-bottom: 4vh;
   }
   .about {
-    height: 120vh;
+    height: 95vh;
+  }
+  .about h3 {
+    font-size: 28px;
   }
   .about h2 {
     font-size: 51px;
     padding-bottom: 0;
     text-align: left;
-    padding-top: 20vh;
+    padding-top: 2vh;
+    margin-left: 5vh;
+  }
+  .about .cards {
+    margin-top: 11vh;
   }
   .about .cards .card1 {
-    margin-left: 20vh;
+    margin-left: 31vh;
+    width: 28%;
   }
   .about .cards .card1 img {
     top: -6vh;
+    width: 100%;
+  }
+  .about .cards .card2 {
+    width: 27%;
+  }
+  .about .cards .card2 img {
+    width: 100%;
   }
   .services {
     margin-top: 7vh;
   }
+  .services .firstslick {
+    margin-left: 9vh;
+    width: 205vh;
+  }
   .services h2 {
     font-size: 51px;
     padding: 6vh;
+    margin-left: -35vh;
   }
   .services ul {
     top: 34vh;
   }
+  .services ul li .fa {
+    padding-left: 5vh;
+    font-size: 24px;
+  }
   .services .slick {
-    margin-left: 3vh;
+    margin-left: 2vh;
   }
   .services .slick .img {
-    margin-left: 3vh;
+    margin-left: 2vh;
   }
   .services ul li .btn1 {
     background-color: white;
     padding: 2vh;
     font-family: "Montserrat1";
-    margin-left: 7vh;
     position: relative;
-    top: 4vh;
+    margin-left: 8vh;
+    font-size: 24px;
+    position: relative;
+    top: 34vh;
   }
-  .services ul {
-    top: 53vh;
+  .services ul li .btn1 .fa {
+    font-weight: bold;
+    font-size: 27px;
   }
   .investor {
     margin-top: 54vh;
@@ -1038,34 +1122,56 @@ footer div p {
     margin-top: 18vh;
   }
   .join {
-    height: 95vh;
+    height: 91vh;
+    margin-top: 16vh;
+  }
+  .join img {
+    position: relative;
+    margin-top: -7vh;
+    padding: 0;
+    margin-left: 6vh;
   }
   .join .div2 {
-    margin-top: 22vh;
+    margin-top: 33vh;
     margin-left: 10vh;
+    text-align: left;
   }
   .join .div2 h3 {
     font-size: 41px;
   }
   .join .div2 p {
     font-size: 32px;
+    padding: 0;
   }
-  .join .div2 .div2 ul li .btn1 {
-    margin-left: 0;
+  .join .div2 .fa {
+    padding-left: 18px;
+    font-size: 29px;
   }
   .join .div2 ul li .btn1 {
     background-color: white;
     padding: 2vh;
+    font-size: 25px;
     font-family: "Montserrat1";
-    border-radius: 10px;
+    border-radius: 0px;
+    margin-left: 0;
   }
   .investor {
     margin-top: -11vh;
     margin-bottom: 11vh;
+    text-align: left;
   }
   .investor .div1 {
-    margin-top: 51vh;
-    margin-left: 4vh;
+    margin-top: 57vh;
+    margin-left: 11vh;
+    width: 50%;
+  }
+  .investor .div1 h2 {
+    font-size: 41px;
+  }
+  .investor .div1 p {
+    font-size: 32px;
+    width: 90%;
+    padding: 0;
   }
   .investor .div1 ul li .btn1 {
     background-color: black;
@@ -1073,14 +1179,16 @@ footer div p {
     font-family: "Montserrat1";
     margin-left: -16vh;
     border-radius: 1px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    font-size: 25px;
   }
-  .investor .div1 ul li .btn1 h2 {
-    font-size: 41px;
+  .investor .div1 ul li .btn1 .fa {
+    padding-left: 18px;
+    font-size: 29px;
   }
-  .investor .div1 ul li .btn1 p {
-    font-size: 32px;
+  .investor .div2 {
+    width: 54%;
+    padding: 0;
+    margin-right: 8vh;
   }
   .QUESTIONS .div2 {
     width: 45%;
@@ -1108,17 +1216,23 @@ footer div p {
     left: 69vh;
   }
   .QUESTIONS .startups #div3 {
-    width: 27%;
-    margin-left: 14vh;
+    width: 25%;
+    margin-bottom: 6vh;
   }
   .QUESTIONS .h2 {
     font-size: 41px;
+    padding: 0;
+    padding-top: 19vh;
   }
   .QUESTIONS main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    margin: 9vh;
+  }
+  .QUESTIONS main h2 {
+    font-size: 26px;
   }
   .QUESTIONS main .div1 {
     width: 45%;
@@ -1133,6 +1247,7 @@ footer div p {
     font-size: 20px;
     margin-left: 20px;
     margin-top: 1vh;
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
