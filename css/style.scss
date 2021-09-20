@@ -346,9 +346,9 @@ header{
                 box-sizing: border-box;
             }
             a{
-              
-                color: rgb(0, 0, 0);
+               color: black;
                 font-size: 17px;
+                text-shadow: 2px 2px rgb(104, 95, 95) ;
                 text-decoration: none;
                 text-transform: capitalize;
                 font-size: $text-Regular;
@@ -374,7 +374,7 @@ img{
 }
 
 .join{
-    overflow: hidden;
+    
     background-color: #E1EFF6;
     height: 110vh;
     margin-top: 7vh;
@@ -621,6 +621,7 @@ $color-white:#fff;
 
 
 footer{
+ 
     background-color: black;
     color:white;
     text-align: center;
@@ -633,6 +634,11 @@ footer{
             font-size: 13px;
             margin-bottom: 0;
         }
+    }
+    .hr{
+        color: white;
+        width: 12%;
+        height: 30%;
     }
 }
 
@@ -976,20 +982,19 @@ footer{
           width: 80%;
         
         .james{
-            background-color: white;
-            width: 37%;
-            position: relative;
-            top: -20vh;
-            border-radius: 15px;
-            margin-left: 58vh;
-            // margin-bottom: -13vh;
+             background-color: white;
+             width: 39%;
+             position: relative;
+             top: -17vh;
+             border-radius: 15px;
+             margin-left: 56vh;
             h3{
-                padding-top: 3vh;
+                padding-top: 1vh;
                 font-size: 32px;
             }
             p{
                 font-size: 23px;
-                padding-bottom: 4vh;
+              
             }
         }
     }
@@ -1003,7 +1008,7 @@ footer{
         font-size: 51px;
         padding-bottom: 0;
         text-align: left;
-        padding-top: 2vh;
+        padding-top: 6vh;
         margin-left: 5vh;
     }
     .cards{
@@ -1025,6 +1030,9 @@ footer{
     }
 }
 .services{
+    p{
+        margin-left: 16px;
+    }
     .firstslick{
         margin-left: 9vh;
         width: 205vh;
@@ -1171,9 +1179,11 @@ footer{
     }
   
    .startups{
+    
        .div1{
+           padding: 4% 12%;
            h3{
-            padding: 6vh;
+        
             font-size: 41px; 
            }
        }
@@ -1185,14 +1195,14 @@ footer{
     border: 2px solid black;
     font-size: 15px;
     position: relative;
-    top: -14vh;
-    left: -74vh;
+    top: -23vh;
+    left: -66vh;
 }
 
 .startups #img2 {
     position: relative;
-    top: -14vh;
-    left: 69vh;
+    top: -23vh;
+    left: 66vh;
 }
 .startups #div3 {
     width: 25%;
@@ -1224,6 +1234,7 @@ footer{
 }
 
 footer{
+    padding-bottom: 31px;
 .div2{
     margin-left: 55vh;
     p{
