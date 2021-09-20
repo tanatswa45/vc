@@ -561,14 +561,21 @@ $color-white:#fff;
     overflow: hidden;
     
    .div1{
-       button{
-           display: none  !important;
-           #img1{
-               display: none;
-           }
-           #img2{
-               display: none;
-           }
+      i{
+        border-radius: 79%;
+        padding: 15px;
+        border: 2px solid black;
+        font-size: 15px;
+        position: relative;
+        top: -14vh;
+        left: -74vh; 
+      }
+
+      #img2{
+        position: relative;
+        top: -14vh;
+        left: 69vh;
+      }
        }
    }
     
@@ -1081,6 +1088,9 @@ footer{
         margin-left: 6vh;
 
     }
+    #img1{
+        width: 20%;
+    }
   
     .div2{
         margin-top: 33vh;
@@ -1151,9 +1161,7 @@ footer{
         width: 45%;
         display: block;
     }
-    button{
-        display: none;
-    }
+  
    .startups{
        .div1{
            h3{
@@ -1180,8 +1188,7 @@ footer{
 }
 .startups #div3 {
     width: 25%;
-    // margin-left: 14vh;
-    margin-bottom: 6vh;
+   margin-bottom: 6vh;
 }
 }
 

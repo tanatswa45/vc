@@ -42,8 +42,8 @@ $(".secondslick").slick({
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay:true,
-  // arrow:true,
+  // autoplay:true,
+  arrow:true,
 
  prevArrow:'#img1',
   nextArrow: '#img2',
