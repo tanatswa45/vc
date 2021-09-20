@@ -754,7 +754,7 @@ footer div p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 57vh;
+    height: 63vh;
   }
   .hero .div1 {
     padding-top: 26vh;
@@ -764,6 +764,12 @@ footer div p {
   .hero .div1 h1 {
     font-size: 26px;
     text-align: left;
+  }
+  .hero .div1 ul {
+    border-radius: 15px;
+  }
+  .hero .div1 ul li .btn2 {
+    padding: 2vh 2vh;
   }
   .hero .div2 {
     padding-top: 20vh;

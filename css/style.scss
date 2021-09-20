@@ -680,7 +680,7 @@ footer{
     
     .hero{
         display: flex;
-        height: 57vh;
+        height: 63vh;
     
     .div1{
         padding-top: 26vh;
@@ -689,6 +689,14 @@ footer{
         h1{
             font-size: 26px;
             text-align: left;
+        }
+        ul{
+            border-radius: 15px;
+           li{
+            .btn2{
+                padding: 2vh 2vh;
+            }
+           }
         }
     }
     .div2{
