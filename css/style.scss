@@ -51,7 +51,7 @@ $text-Regular:'Montserrat3';
 
 header{
 
-
+    overflow: hidden;
     background-color: transparent;
     z-index: 4;
     position: absolute;
@@ -192,6 +192,7 @@ header{
     height: 100vh;
     position: relative;
     text-align: left;
+    overflow: hidden;
     h1{
         font-family: $text-bold;
         text-align: center;
@@ -269,6 +270,7 @@ header{
     background-color: #E1EFF6;
     height: 160vh;
     text-align: center;
+    overflow: hidden;
 
     h2{
         color: black;
@@ -372,6 +374,7 @@ img{
 }
 
 .join{
+    overflow: hidden;
     background-color: #E1EFF6;
     height: 110vh;
     margin-top: 7vh;
@@ -425,6 +428,7 @@ img{
 .investor{
     margin-top: 5vh;
     text-align: center;
+    overflow: hidden;
    
     .div1{
         p{
@@ -561,6 +565,7 @@ $color-white:#fff;
     overflow: hidden;
     
    .div1{
+       background-color: white;
       i{
         border-radius: 79%;
         padding: 15px;
@@ -568,7 +573,7 @@ $color-white:#fff;
         font-size: 15px;
         position: relative;
         top: -14vh;
-        left: -74vh; 
+        left: -67vh; 
       }
 
       #img2{
@@ -581,12 +586,12 @@ $color-white:#fff;
     
 .secondslick{
     margin-top: 100px;
-}
+
     .div1{
         background-color: white;
         width: 100%;
     }
-
+}
     .slick{
         display: flex;
         justify-content: space-around;
@@ -612,7 +617,7 @@ $color-white:#fff;
 
    
 }
-}
+
 
 
 footer{
@@ -621,6 +626,7 @@ footer{
     text-align: center;
     display: block;
     padding: 0;
+    overflow: hidden;
     div{
         display: block;
         p{

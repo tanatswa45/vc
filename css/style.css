@@ -49,6 +49,7 @@ table {
 }
 
 header {
+  overflow: hidden;
   background-color: transparent;
   z-index: 4;
   position: absolute;
@@ -224,6 +225,7 @@ header nav {
   height: 100vh;
   position: relative;
   text-align: left;
+  overflow: hidden;
 }
 
 .hero h1 {
@@ -306,6 +308,7 @@ header nav {
   background-color: #E1EFF6;
   height: 160vh;
   text-align: center;
+  overflow: hidden;
 }
 
 .about h2 {
@@ -415,6 +418,7 @@ header nav {
 }
 
 .join {
+  overflow: hidden;
   background-color: #E1EFF6;
   height: 110vh;
   margin-top: 7vh;
@@ -479,6 +483,7 @@ header nav {
 .investor {
   margin-top: 5vh;
   text-align: center;
+  overflow: hidden;
 }
 
 .investor .div1 p {
@@ -636,20 +641,36 @@ header nav {
   overflow: hidden;
 }
 
-.QUESTIONS .startups .div1 button {
-  display: none  !important;
+.QUESTIONS .startups .div1 {
+  background-color: white;
 }
 
-.QUESTIONS .startups .secondslick {
+.QUESTIONS .startups .div1 i {
+  border-radius: 79%;
+  padding: 15px;
+  border: 2px solid black;
+  font-size: 15px;
+  position: relative;
+  top: -14vh;
+  left: -67vh;
+}
+
+.QUESTIONS .startups .div1 #img2 {
+  position: relative;
+  top: -14vh;
+  left: 69vh;
+}
+
+.QUESTIONS .secondslick {
   margin-top: 100px;
 }
 
-.QUESTIONS .startups .div1 {
+.QUESTIONS .secondslick .div1 {
   background-color: white;
   width: 100%;
 }
 
-.QUESTIONS .startups .slick {
+.QUESTIONS .slick {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,19 +678,19 @@ header nav {
       justify-content: space-around;
 }
 
-.QUESTIONS .startups .slick #div1 {
+.QUESTIONS .slick #div1 {
   width: 31%;
 }
 
-.QUESTIONS .startups .slick #div2 {
+.QUESTIONS .slick #div2 {
   width: 61%;
 }
 
-.QUESTIONS .startups .slick #div3 {
+.QUESTIONS .slick #div3 {
   width: 31%;
 }
 
-.QUESTIONS .startups .slick-slide img {
+.QUESTIONS .slick-slide img {
   display: initial;
 }
 
@@ -679,6 +700,7 @@ footer {
   text-align: center;
   display: block;
   padding: 0;
+  overflow: hidden;
 }
 
 footer div {
